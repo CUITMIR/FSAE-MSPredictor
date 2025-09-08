@@ -1,0 +1,2 @@
+cd tools
+python train.py --gpus 0 --ex_name FSAEMSPredictor_wind --check_val_every_n_epoch 1 --batch_size 64 --val_batch_size 64 --num_workers 8 --dataname wind --method FSAEMSPredictor --config_file configs/wind/FSAEMSPredictor.py --epoch 50 --opt adam --lr 5e-4 --weight_decay 0
